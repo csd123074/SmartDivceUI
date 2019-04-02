@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="버튼"
+        android:id="@+id/textView1"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView1"
+        android:id="@+id/linearLayout">
+
+        <Button
+            android:text="예"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_yes"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="아니오"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_no"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="체크박스"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="19dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="항상켜기"
+        android:id="@+id/checkBox_always_on"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="19dp"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="밝기 조절 탐색바"
+        android:id="@+id/textView3"
+        android:layout_marginTop="19dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_below="@+id/checkBox_always_on"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar_Brightness"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="19dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="전송문자열 입력"
+        android:id="@+id/textView4"
+        android:layout_marginTop="19dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_below="@+id/seekBar_Brightness"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_send_string"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="전송"
+        android:id="@+id/button_send"
+        android:layout_below="@+id/editText_send_string"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>
